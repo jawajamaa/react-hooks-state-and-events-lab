@@ -10,9 +10,9 @@ const [inCart, setInCart] = useState(false);
   const itemClassName = inCart ? "in-cart" : "";
 
   return (
-    <li className="">
+    <li className= { itemClassName }>
       <span>{name}</span>
-      <span className= { itemClassName }>{category}</span>
+      <span className= "category">{category}</span>
       <button className="add" onClick = { handleClick }> { inCart ? "Add to Cart" : "Remove from Cart" } </button>
     </li>
   );
